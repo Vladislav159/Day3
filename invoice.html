@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+
+    <style>
+        body {
+            width:900px;
+            height: 1000px;
+            background-color:  rgb(240, 245, 247);
+            
+        }
+        
+    h1{
+    font-weight: 100;        
+    font-size: 46px;
+    font-family: 'Agdasima', sans-serif;
+    color: rgba(94, 91, 91, 0.763);
+    font-style: normal;
+    padding-left:40px;
+
+}
+.name {
+    padding-left:40px;
+    color:grey;
+    display: flex;
+    justify-content: space-between;
+}
+.bill {
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.data{ display:flex
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+table {
+    width: 900px;
+    padding-left: 35px;
+}
+
+tbody {
+    height: 300px;
+
+}
+.heading {
+    background-color: blue; 
+    color: white;
+}
+
+.Null{
+    text-align:right;
+}
+.Null2{text-align: right;
+    background-color: aquamarine;
+}
+
+.money{
+    text-align:right;
+}
+.subtotal {
+    text-align:right;
+}
+.discount{
+    text-align:right;
+}
+.Balancedue{
+    text-align: right;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Invoice</h1>
+    <br>
+    <br>
+    <div class="name">
+        Your Company Name<br> 
+        123 Street Address<br>
+        City, State, Zip/Post Code<br> 
+        Phone Number<br>
+        Email Address
+        <br><br>
+        <div class="data">
+        2023-06-16<br><br><br>
+        20230616</div>
+    </div>
+    
+    <div class="bill">
+      <div class="bill1">  <strong>BILL TO</strong><br><br>
+
+        Contact Name<br>
+        Client Company Name<br>
+        Address<br>
+        Phone, Email<br><br>
+        </div>
+
+
+      <div class="bill2"> <strong>SHIP TO</strong><br><br>
+
+        Name / Dept<br>
+        Client Company Name<br>
+        Address<br>
+        Phone<br>
+    </div> 
+    </div>   
+    
+    <table>
+        <tbody>
+                <tr class="heading">
+                    <th colspan="10">Description</th>
+                    <th colspan="2">Qty</th>
+                    <th>Unit price</th>
+                    <th colspan="10">Total</th>
+                </tr>
+                <tr >
+                    <td >Monitorius</td>
+                    <td colspan="10">10</td>
+                    <td></td>
+                    <td >100.99</td>
+                    <td colspan="5">1,009.9</td>
+                    <td colspan="5"></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td></td>
+                    <td ></td>
+                    <td ></td>
+                    <td colspan="5">0.00</td>
+                    <td colspan="10"></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td></td>
+                    <td ></td>
+                    <td ></td>
+                    <td colspan="5">0.00</td>
+                    <td colspan="10"></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td></td>
+                    <td ></td>
+                    <td ></td>
+                    <td colspan="5">0.00</td>
+                    <td colspan="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td></td>
+                    <td ></td>
+                    <td ></td>
+                    <td colspan="5">0.00</td>
+                    <td colspan="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td></td>
+                    <td ></td>
+                    <td ></td>
+                    <td colspan="5">0.00</td>
+                    <td colspan="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td colspan="2"></td>
+                    <td class="subtotal">SUBTOTAL</td>
+                    <td></td>
+                    <td></td>
+                    <td class="money">1,009.9  </td>
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td colspan="2"></td>
+                    <td class="discount">DISCOUNT</td>
+                    <td ></td>
+                    <td></td>
+                    <td class="Null">0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td colspan="2"></td>
+                    <td class="Balancedue"rowspan="2"><b>Balance<br> Due</b></td>
+                    <td ></td>
+                    <td></td>
+                    <td class="Null2"> <b>€ 1,009.90</b></td>
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+            
+        </tbody>
+    </table>
+    
+    
+
+
+    
+</body>
+</html>

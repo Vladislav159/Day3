@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbackground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url(clothes-bg.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        gap: 20px;
+        padding: 20px;
+        
+        
+    }
+    .main{
+        box-sizing: border-box;
+        border: 1px solid red;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        margin-right: 60px;
+    }
+      
+        
+        
+    .heading {
+        width:400px;
+        font-size: 44px;
+        font-family: 'Chango', sans-serif;
+        color:white;
+        padding-top:100px;
+        padding-left:150px;
+
+    }
+
+    p { width:400px;
+        font-size: 20px;
+        font-family: 'Chango', sans-serif;
+        color:white;
+        
+        padding-left:150px;
+
+    }
+    .media_links {
+        
+        margin:inherit;
+        padding-left:150px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .input_blank {
+        display: flex;
+        margin-top: 87px;
+        margin-left: 231px
+        padding-left: 37px;
+        
+        padding-bottom: 23px;
+        
+    }
+    h2 {
+        display: inline-flex;
+
+        width: 249px;
+        color:white; 
+        font-family: 'Chango', sans-serif;
+        font-size:30px;
+        padding-bottom:15px;
+
+    }
+    h5{ display: inline-flex;
+        color:white; 
+        font-family: 'Chango', sans-serif;
+        font-size: 10px;
+        padding-bottom:15px;
+        
+
+
+    }
+    
+    
+    button {
+        background-color:green;
+        color:white;
+        font-family: 'Chango', sans-serif;
+        
+        padding-right: 20px;
+        
+    
+
+    }
+    .firstname {
+        background-color:rgb(42, 34, 34);
+        font-family: 'Chango', sans-serif;
+        margin:3px;
+
+    }
+    .lastname {
+        background-color:rgb(42, 34, 34);
+        font-family: 'Chango', sans-serif;
+        margin:3px;
+        
+
+    }
+    .email {
+        background-color:rgb(42, 34, 34);
+        font-family: 'Chango', sans-serif;
+        width: 110px;
+        margin:3px;
+}
+    
+    .phone {
+        background-color:rgb(42, 34, 34);
+        font-family: 'Chango', sans-serif;
+        width: 110px;
+        margin:3px;
+
+    }
+    .typemessage {
+        background-color:rgb(42, 34, 34);
+        font-family: 'Chango', sans-serif ;
+        
+        margin:3px;
+        padding-bottom: 70px;
+    }
+    .style{
+        display: flex;
+    flex-direction: column;
+    gap: 5px;
+        padding-top:20px;
+        background-color: rgb(28, 23, 23);
+        padding-left: 23px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+        
+
+    }
+    .input-inline {
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+    .buttonQuote { 
+        margin:3px;
+        padding: 6px 118px 5px 11px;
+        
+        
+        
+
+
+
+    }
+
+    
+
+
+</style>
+<body>
+    <div class="main">
+    <div class="intro">
+    <h1 class="heading">Lorem ipsum dolor sit</h1><br>
+    <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Unde blanditiis eaque eos.</p><br><br>
+    </div>
+    <div class="media_links">
+        <a href="https://twitter.com/" target="blank">
+        <img src="twitteris.png">
+        </a>
+        <a href="https://www.facebook.com/" target="blank">
+            <img src="fb.png">
+        </a>
+        <a href="https://www.instagram.com/" target="blank">
+            <img src="instagram.png">
+        </a>
+        <a href="https://www.google.com/" target="blank">
+            <img src="download.png">
+        </a>
+    </div>
+    </div>
+    
+    <div class="input_blank">
+        <form class="style">
+            <h2>Get a quote</h2>
+            <h5>We will get back to you in 24 hours</h5>
+            <input type="First name" class="firstname" placeholder="First name"><br>
+            <input type="Last name" class="lastname"placeholder="Last name"><br>
+            <div class="input-inline">
+            <input type="Email" class="email" placeholder="Email"><br>
+            <input type="Phone" class="phone" placeholder="Phone"><br>
+            </div>
+            
+            <input type="Type message here" class="typemessage" placeholder="Type message here"><br>
+            <div>
+            <button class="buttonQuote">Get a quote</button>
+            </div>
+        </form>
+        </div>
+
+    </div>
+</body>
+</html>
