@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentLogin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #09d4d4;
+            margin: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        
+
+        .payment {
+            width: 400px;
+            margin: 100px auto 0;
+            background-color: white;
+            padding: 30px;
+        }
+
+        .payment h1 {
+            font-weight: 400;
+            font-size: 30px;
+            text-align: center;
+            margin: 0 0 25px;
+            color: #246f6f;
+            padding-bottom:27px;
+        }
+
+        .links {
+            
+            display: flex;
+            justify-content: center;
+            margin-bottom: 28px;
+            margin-top: 19px;
+            gap: 4px;
+        }
+
+        
+
+        form input {
+            width: 80%;
+            font-size: 17px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 8px 15px;
+            border: none;
+            text-align:center;
+        }
+
+        form .input {
+            border: 1px solid #d7d7d7;
+            border-bottom: 2px solid #d7d7d7;
+            padding-left: 4px;
+            margin-top: 4px;
+        }
+
+        form input:first-child {
+            margin-bottom: 20px;
+        }
+
+        form button {
+            color: white;
+            background-color:#09d4d4;
+            border: none;
+            width: 100%;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            padding: 8px 0;
+            margin-top: 18px;
+        }
+
+        label {
+            color:rgb(105, 98, 98);
+            font-family: 'Ubuntu', sans-serif;
+        }
+        p {
+            color:rgb(105, 98, 98);
+            font-family: 'Ubuntu', sans-serif;
+            margin-bottom: 4px
+        }
+        .codingmark {
+            border: 1px solid #d7d7d7;
+            border-bottom: 2px solid #d7d7d7;
+            padding-left: 4px;
+        }
+        .cardnum {
+            border: 1px solid #d7d7d7;
+            border-bottom: 2px solid #d7d7d7;
+            padding-left: 4px;
+        }
+        
+        
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="payment">
+        <h1>Payment Gateway</h1>
+        <form>
+            <div>
+                <p>Card Holder:</p>
+            </div>
+                <div class="codingmark">
+                    <i class="bi bi-person" ></i>
+                    <input type="text" placeholder="Coding Market">
+                </div>
+            <div>
+                <p>Card number:</p>
+            </div>
+            <div class="cardnum">
+                <i class="bi bi-credit-card" ></i>
+                <input type="text" placeholder="Card number">
+            </div>
+            <div class="links">
+                <div>
+                    <label>Expiry date:</label>
+                    <div class="input">
+                        <i class="bi bi-calendar-event" ></i>
+                        <input type="text" placeholder="00/00"></a>
+                    </div>
+                </div>
+                <div>
+                    <label>CVC:</label>
+                    <div class="input">
+                        <i class="bi bi-file-lock2" ></i>
+                        <input type="text" placeholder="000">
+                    </div>    
+                </div>
+            </div>
+            <div >
+                <button type="submit">Pay</button>
+             </div>
+        </form>
+        
+    </div>
+</body>
+</html>

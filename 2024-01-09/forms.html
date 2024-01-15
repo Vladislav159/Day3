@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormEshop</title>
+</head>
+<style>
+    label {
+        display:block;
+        margin:5px o;
+    }
+/* Visiem arba tam tikriem elementams ivesti pakeitimus */
+    input {
+        display:block;
+        width:100%;
+    }
+    /* -paketimai radio ir checkbox- */
+    input[type="checkbox"] {
+        width:unset;
+        display:inline;
+    }
+    input[type="radio"] {
+        width:unset;
+        display:inline;
+    }
+    select {
+        width:100%;
+        border:1px solid black;
+        padding:10px 20px;
+        background-color: aquamarine;
+
+    }
+    /* resize - fiksuoja dydi */
+    textarea {
+        width:100%;
+        height:100px;
+        resize:none;
+    }
+</style>
+<body>
+    
+    <form>
+        <div>
+        <input type="text" placeholder="Vardas Pavarde">
+        </div>
+        <div>
+            <label> Jusu vardas</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="Password" placeholder="Password">
+        </div>
+        <div>
+            <label>Number</label>
+            <input type="Number">
+        </div>
+        <div>
+            <label>Color</label>
+            <input type="color">
+        </div>
+    
+    <div>
+        <label>Pasirinkti spalva</label>
+        <input type="color" list="colors" >
+        <datalist id="colors">
+            <option value="#235eg23">First</option>
+            <option value="#2352f3">First</option>
+        </datalist>
+    </div>
+    <div>
+        <label>Choose date</label>
+        <input type="date">
+    </div>
+    <div>
+        <label>Choose date and time</label>
+        <input type="datetime-local">
+    </div>
+    <!-- Vieno ar keliu failu ikelimas -->
+    <div>
+        <label>Choose few File</label>
+        <input type="file" mulptiple>
+    </div>
+    <div>
+        <label>Priskirta reiksme</label>
+        <input type="text" value="Pries tai buvusi reiksme">
+    </div>
+    <div>
+        <label>Isjungti laukeliai</label>
+        <input type="text" value="www.google.com" disabled>
+    </div>
+    <div>
+        <label>Nereddaguojami laukeliai</label>
+        <input type="text" value="www.google" readonly>
+    </div>
+    <div>
+        <label>
+            <input type="checkbox">
+            Sutinku su vartojimo politika
+        </label>
+    </div>
+    <div>
+        <input type="checkbox" id="naujienlaiski">
+        <label for="naujienlaiski">sutinku su politika</label>
+    </div>
+    <div>
+        <h4>Choose topic</h4>
+        <div>
+            <label>
+            <input type="radio" name="topic">
+            Saskaitos
+        </label>
+        </div>
+        <div>
+        <label>
+            <input type="radio" name="topic">
+            Mokesciai
+        </label>
+        </div>
+    </div>
+    <div>
+        <h4>Pasirinkite pastomata</h4>
+        <select>
+            <option>Omniva</option>
+            <option>Venipak</option>
+            <option>LPexpress</option>
+        </select>
+    </div>
+    <!-- Comment fill area -->
+    <div>
+        <!-- Comment box -->
+        <label>Message</label>
+        <textarea></textarea>
+    </div>
+    <div>
+        <button>Send</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastercard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color:aquamarine;
+            font-family: 'Open Sans', sans-serif;
+            /* display:flex;
+            justify-content:center; */
+            
+
+        }
+        .cardnumber{
+            background-color:whitesmoke;
+            box-sizing:border-box;
+            width: 700px;
+            display:flex;
+            flex-direction:column;
+            margin: 100px auto 0;
+            padding:20px;
+
+        }
+        button {
+        
+            color: white;
+            background-color:#2f1d82;
+            border: none;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            padding: 8px 0;
+            margin-top: 18px;
+        }
+        .firstline {
+            display:flex;
+            justify-content:space-between;
+            margin-top:5px;
+        }
+        .secondline {
+            
+            padding-left: 4px;
+            margin-top: 19px;
+        }
+        
+        .thirdline {
+            display: flex;
+            justify-content: space-between;
+            margin-top:5px;
+            
+        }
+        .fourline {
+                display:flex;
+                justify-content: space-between;
+                margin-top:5px;
+                padding-top:11px;
+
+        }
+        .fiveline {
+                display:flex;
+                justify-content: space-between;
+                margin-top:5px;
+        }
+        label {
+            font-size:20px;
+        }
+        .paynow {
+            text-align: center;
+        }
+        .edit {
+            display:flex;
+            align-items: center;
+        }
+        p {
+            color:rgb(155, 144, 144);
+            font-family: 'Open Sans', sans-serif;
+            font-size:13px;
+            margin: 0;
+        }
+        .secondline
+        input { width: 95%;
+        font-size: 17px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 8px 15px;
+        border: none;
+        }
+        .monthyear {
+            padding-top: 18px;
+            margin-right: 4px;
+        
+        }  
+        .monthyear 
+        input {
+            font-family: 'Open Sans', sans-serif;
+            padding: 10px 0px;
+            border: none;
+            text-align: center;
+            
+        }
+        .cvcnumber
+        input {
+            font-family: 'Open Sans', sans-serif;
+            padding: 12px 77px;
+            border: none;
+            text-align: center;
+        }
+        .cvcnumber{
+            padding-top: 12px;
+        }
+
+        .fiveline
+        input {
+            font-family: 'Open Sans', sans-serif;
+            padding: 12px 77px;
+            border: none;
+            text-align: center;
+        }
+        
+        
+        .cardholder{
+            padding-top:12px;
+        }
+        .expirdate {
+            padding-top:10px;
+        }
+        .labelcvc {
+            margin-top:10px;
+        }
+        .cardfive {
+            padding-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardnumber"> 
+        <div class="firstline">
+            <div>
+            <label><b>Card Number</b></label>
+            <p>Enter 16-digit card number on the card</p>
+            </div>
+            <div class="edit">
+                <i class="bi bi-pencil"></i>
+                <span><a href="https://www.google.com">Edit</a></span>
+            </div>
+        </div>
+        <div class="secondline"> 
+            <img src="https://svgshare.com/i/11ku.svg">
+            <input type="text" placeholder="LT19945914199919927">
+        </div>
+        <div class="thirdline">
+            <div class="expirdate">
+                <label><b>Expiry Date</b></label>
+                <p>Enter the exparation date of the card</p>
+            </div>
+            <div class="monthyear">
+                <input type="text" placeholder="MM">
+                <label>/</label>
+                <input type="text" placeholder="YY">
+            </div>
+        </div>
+        <div class="fourline">
+            <div class="labelcvc">
+                <label><b>CVC Number</b></label>
+                <p>Enter the verification code from the back of the card</p>
+            </div>
+            <div class="cvcnumber">
+                
+                <input type="numbers">
+                <i class="bi bi-eye"></i>
+                
+            </div>
+        </div>
+        <div class="fiveline">
+            <div class="cardfive">
+                <label><b>Cardholder Name</b></label>
+                <p>Enter cardholder`s name</p>
+            </div>
+            <div class="cardholder">
+                <input type="text" placeholder="CARDHOLDERS NAME">
+                <i class="bi bi-person"></i>
+            </div>
+        </div>
+        <div class="paynow">
+                <button type="submit">Pay Now</button>
+        </div>
+    </div>
+    
+</body>
+</html>

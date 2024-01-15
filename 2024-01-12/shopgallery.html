@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .body {
+            background-color:antiquewhite;
+            margin:0 auto;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        .checkout-box{
+            width:700px;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            top: 80px;
+            left: 400px;
+}
+            
+        
+        .headline {
+            display:flex;
+            justify-content:space-evenly;
+            background-color:rgb(195, 191, 191);
+            
+            opacity: 0.5;
+            margin: 14px 0px;
+
+            
+        }
+        .line1  {
+            display:flex;
+            justify-content:space-evenly;
+            border-bottom: 1px solid  rgb(195, 191, 191);
+            margin: 14px 0px;
+        }
+        
+        .line2 {
+            display:flex;
+            justify-content:space-evenly;
+            border-bottom: 1px solid  rgb(195, 191, 191);
+            margin: 14px 0px;
+        }
+        .line3 {
+            display:flex;
+            justify-content:space-evenly;
+            margin: 14px 0px;
+        }
+        .contshopping {
+            display:flex;
+            justify-content: space-between;
+            
+            
+        }
+        .subtotal {
+            width:266px;
+            display:flex;
+            justify-content:flex-end;
+            flex-direction:column;
+            flex-wrap:wrap;
+            align-content:flex-end;
+            border: 1px solid rgb(195, 191, 191);
+        }
+
+        .subtotal p {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px;
+           
+        }
+        .proceedcheckout {
+            display:flex;
+            justify-content:flex-end;
+        }
+        
+        .black {
+            color:white;
+            background-color:black;
+            padding:10px ;
+        }
+        .white {
+            color:rgb(58 52 52);
+            border: 1px solid rgb(195, 191, 191);
+            padding:10px;
+        }
+        .proceed {
+            color:white;
+            background-color:black;
+            padding: 10px 60px;
+        }
+
+        .subtotal-parent {
+            display: flex;
+            justify-content: end;
+            margin-top: 35px;
+        }
+        .product{
+            /* margin-right: 118px; */
+        }
+        .price{
+            /* margin-right: 145px; */
+        }
+        .quantity {
+
+        }
+        .total {
+
+        }
+        img {
+            margin-bottom:14px;
+        }
+        .line1 img {
+            /* margin-right: 83px; */
+        }
+
+        .col1 {
+            width: 15%;
+            text-align: center;
+        }
+
+        .col2 {
+            width: 20%;
+            padding-top: 20px;
+        }
+
+        .col3 {
+            width: 20%;
+        }
+
+        .col4 {
+            width: 20%;
+        }
+
+        .col5 {
+            width: 15%;
+        }
+        .col3l{
+            width:20%;
+            padding-top: 20px;
+        }
+        .col4l {
+            width:20%;
+            padding-top: 21px;
+        }
+        .col5l {
+            width:15%;
+            padding-top:20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="checkout-box">
+        <div class="headline">
+            <h3 class="col1">Product</h3>
+            <h3 class="product col2"></h3>
+            <h3 class="price col3">Price</h3>
+            <h3 class="quantity col4">Quantity</h3>
+            <h3 class="total col5">Total</h3>
+        </div>
+        <div class="line1">
+            <p class="col1">
+                <img src="cart-01.webp">
+            </p>
+            <p class="col2"><b>Plant pots</b></p>
+            <p class="col3l">$17.00</p>
+            <p class="col4l">-2+</p>
+            <h5 class="col5l"> $635.00</h5>
+        </div>
+        <div class="line2">
+            <p class="col1">
+            <img src="cart-02.webp">
+            </p>
+            <p class="col2"><b>Teapot with Black Tea</b> </p>
+            <p class="col3l">$14.00</p>
+            <p p class="col4l">-2+</p>
+            <h5 class="col5l">£635.00</h5>
+        </div>
+        <div class="line3">
+            <p class="col1">
+            <img src="cart-03.webp"></p>
+            <p class="col2"><b>Wooden Flowerpot</b></p>
+            <p class="col3l">$14.00</p>
+            <p class="col4l">-2+</p>
+            <h5 class="col5l">£635.00</h5>
+        </div>
+        <div class="contshopping">
+            <p class="black">Continue Shopping</p>
+            <p class="white">Update cart</p>
+        </div>
+        <div class="subtotal-parent">
+            <div class="subtotal">
+                <p><b>Subtotal</b>$87.00</p>
+                <p><b>Total</b>$87.00</p>
+            </div>
+        </div>
+        <div class="proceedcheckout">
+            <p class="proceed">Proceed to checkout</p>
+        </div>
+    </div>
+    
+</body>
+</html>
