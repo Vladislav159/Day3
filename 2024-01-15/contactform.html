@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style> 
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin:0 auto;
+        font-family: 'Montserrat', sans-serif;
+        width:1024px;
+        height:1000px;
+       
+
+    }
+    .mainbox {
+        width: 1440px;
+        height: 912px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: var(--white, #FFF);
+        box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.30);
+        display:flex;
+        
+        align-items:center;
+        position: sticky;
+        top: 100px;
+}
+        
+       
+    
+    .leftside {
+        width:545px;
+        font-family:'Montserrat', sans-serif;
+        flex-shrink: 0;
+        border-radius: 50px;
+        padding:0px 85px;
+        
+    }
+    .rightside {
+        width: 419px;;
+        height: 912px;
+        flex-shrink: 0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background: #6DE1C2;
+        position:absolute;
+        top: 0;
+        right: 0;
+        
+    }
+    .contactbox {
+            display:flex;
+            flex-direction:column;
+            width: 549px;
+    }
+
+    .image {
+        position: relative;
+        top:0px;
+        left:140px;
+    }
+    
+    h1 {
+        width:545px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; 
+        letter-spacing: 0.46px;
+    }
+    .green-button {
+        color: #6DE1C2;
+    }
+    p {
+        width:545px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.14px;
+    }
+    label {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: #383C3E;
+    }
+    
+    .contact {
+        display: flex;
+        height: 55px;
+        padding: 12px 0px;
+        color: #8E8E8E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .street {
+        display: flex;
+        height: 54px;
+        padding: 12px 0px;
+        
+        color: #8E8E8E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .city {
+        width: 310px;
+    }
+    .postcode {
+        
+    }
+
+    .contactph {
+        display: flex;
+        height: 48px;
+        padding: 12px 0px;
+        color: #8E8E8E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .mail {
+        display: flex;
+        height: 55px;
+        padding: 12px 0px;
+        color: #8E8E8E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+
+    }
+    .chatidea {
+        display: flex;
+        height: 57px;
+        padding: 12px 0px;
+        
+        margin-bottom: 12px;
+        color: #8E8E8E;
+        
+        font-style: normal;
+        font-weight: 400;
+        
+
+    }
+    button {
+            background-color:#0982FE;
+            display: flex;
+            width: 100%;
+            padding: 16px 0px;
+            
+            justify-content: center;
+            align-items: center;
+            
+            
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            color: var(--Primeraly-White, #FFF);
+            border-radius: 10px;
+        
+            
+    }
+    .upload {
+        display: flex;
+        border: 1px dashed var(--Input-text, #8E8E8E);
+        padding: 40px 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align:center;
+        
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid #737B7D;
+        
+        color: #8E8E8E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        
+    }
+    input:focus {
+        outline: none;
+        border-bottom: 1px solid ;
+    }
+    .secondpar {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+       
+    }
+    .checkbox{
+        
+        color: #383C3E;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    label {
+       
+        display: inline-flex;
+        padding: 12px 16px 12px 4px;
+        align-items: center;
+        gap: 8px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .inline {
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+        padding: 5px 0px;
+    }
+    .footer {
+           
+            display: flex;
+            width: 549px;
+            height: 40px;
+            align-items: flex-start;
+            padding: 12px 16px 12px 4px;
+            flex-shrink: 0;
+            
+    }
+    .number{
+        display:flex;
+        
+        
+    }
+    .info {
+        display:flex;
+        
+    }
+    .weblink {
+        display:flex;
+        
+    }
+    a{
+        text-decoration: none;
+        margin-left:10px;
+        color:#DD5471;
+
+    }
+    b{
+        color: var(--black, #000);
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .checkboxmain {
+        padding: 12px 16px 12px 4px;
+    }
+    .coordinates {
+        width: 157px;
+        height: 112px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+        position:absolute;
+        top: 22px;
+        left: 44px;
+        padding: 3px 38px 9px 10px;
+    }
+    .coordinates b {
+        color: #0982FE;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21px;
+    }
+    .coordinates p {
+        color: #0982FE;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="leftside">
+            <h1>Get in <span class="green-button">Touch</span> </h1>
+            <p>
+            Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</p>
+            
+            <form>
+                <div class="contactbox">
+                <input type="text" placeholder="Contact Name" class="contact">
+                <input type="text" placeholder="Street" class="street">
+                    <div class="inline">
+                        <input type="text" placeholder="City" class="city">
+                        <input type="text" placeholder="Postcode" class="postcode">
+                    </div>
+                <input type="text" placeholder="Contact Phone" class="contactph">
+                <input type="email" placeholder="E-mail" class="mail">
+                <input type="text" placeholder="Lets talk about your idea" class="chatidea">
+                        <input type="text" placeholder="Upload Additional file" class="upload">
+                <p class="secondpar">Attach file. File size of your documentsshould not exceed 10MB</p>
+                    
+                    <div class="checkboxmain">
+                        <label>
+                            <input type="checkbox">
+                            I want to protect my data by signing an NDA
+                        </label>
+                    </div>
+                
+                   <button>Submit</button>
+                    
+                </div>
+                <div class="footer">
+                    <div class="number">
+                        <img src="Frame 831.png">
+                        <a href="tel:111 111 111" ><b>Phone</b><br>111 111 111</a>
+                    </div>
+                    <div class="info">
+                        <img src="Frame 833.png">
+                        <a href="mailto:info@company.com"><b>E-mail</b><br>info@company.com</a>
+                    </div>
+                    <div class="weblink">
+                        <img src="Frame 833.png">
+                        <a href="https://helpdesk.com"><b>HELPDESK</b><br>https://helpdesk.com</a>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    
+    <div class="rightside"></div> 
+    <div class="image">
+            <img src="Slice 3 (1) 1.png">
+            <div class="coordinates">
+                <p> <b>Headquarters<br>
+                 Company s. r. o.</b><br>
+                 Street. 51<br>
+                 100 00 Prague</p>
+             </div>
+    </div>
+    
+</div>
+</body>
+</html>
+
+
