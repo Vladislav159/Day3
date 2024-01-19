@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown - Nav</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin:0;
+            font-family: Rubik;
+        }
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+        nav {
+            background-color: aliceblue;
+
+        }
+        ul {
+            margin:0;
+            padding:0;
+            list-style: none;
+            display:flex;
+
+        }
+        a {
+            text-decoration:none;
+            color:black;
+            display: block;
+            padding:15px 20px;
+            transition: all .5s ease-in-out;
+        }
+        a:hover {
+            background-color: black;
+            color: white ;
+        }
+        /* salia esancio elemnto parinkimas */
+        
+        li ul {
+            display:none;
+        }
+
+        li:hover ul {
+            display: block;
+            position:absolute;
+            width:300px;
+            background-color: white;
+        }
+        li ul a {
+            padding:7px 20px;
+        }
+        li ul a:hover {
+            background-color: white;
+            color:black;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <ul>
+            <li>
+                <a href="#" >Drabuziai</a>
+                <ul>
+                    <li><a href="#">Megztiniai</a></li>
+                    <li><a href="#">Kelnes</a></li>
+                    <li><a href="#">Striukes</a></li>
+                    <li><a href="#">Apatiniai</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Vaikams</a></li>
+            <li><a href="#">Avalyne</a></li>
+            <li><a href="#">Aksesuarai</a></li>
+            <li><a href="#">Vyrams</a></li>
+        </ul>
+    </nav>
+
+    </div>
+</body>
+</html>

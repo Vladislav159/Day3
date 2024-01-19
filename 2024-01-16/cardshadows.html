@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korteles shadows and transitions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            background-color:rgb(244, 249, 228);
+        }
+
+        .mainbox {
+            width: fit-content;
+            margin:200px auto;
+            
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            gap:60px;
+            
+        }
+        
+        
+        p {
+            font-size:20px;
+            font-weight: 500;
+        }
+
+        .imgone {
+            width: 300px;
+            height: 440px;
+            background-color: white;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 500ms ease-in-out;
+        }
+        .imgone:hover {
+            background-color: #e69809;
+            border-top-right-radius: 10%;
+            box-shadow: 10px 10px 40px 0 rgb(122 113 113 / 65%);
+        }
+        .imgtwo {
+            width: 300px;
+            height: 440px;
+            background-color: white;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 500ms ease-in-out;
+        }
+        .imgtwo:hover {
+            background-color:#098d4f;
+            border-top-right-radius: 10%;
+            box-shadow: 10px 10px 40px 0 rgb(122 113 113 / 65%);
+        }
+        .imgthree {
+            width: 300px;
+            height: 440px;
+            background-color: white;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 500ms ease-in-out;
+            
+        }
+        .imgthree:hover {
+            background-color:#49054fea;
+            border-top-right-radius: 10%;
+            box-shadow: 10px 10px 40px 0 rgb(122 113 113 / 65%);
+        }
+        .imgfour {
+            width: 300px;
+            height: 440px;
+            background-color: white;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;    
+            transition: all 500ms ease-in-out;    
+        }
+        .imgfour:hover {
+            background-color:#1f3493;
+            border-top-right-radius: 10%;
+            box-shadow: 10px 10px 40px 0 rgb(122 113 113 / 65%);
+            
+        }
+        .orange {
+            
+            background: color;
+            padding: 43px 54px;
+            background-color: #fdc55e;
+            border-radius: 50%;
+        }
+        .secondimg {
+            
+            background: color;
+            padding: 43px 50px;
+            background-color: #12ed87;
+            border-radius: 50%;
+            
+        }
+        .thirdimg {
+            
+            background: color;
+            padding: 50px 46px;
+            background-color: #7d2186ea;
+            border-radius: 50%;
+        }
+        .fourimg {
+            
+            background: color;
+            padding: 43px 50px;
+            background-color: #7388e9;
+            border-radius: 50%;
+        }
+        .orangeborder {
+            border: 7px solid #fdc55e;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .greenborder {
+            border: 7px solid #12ed87;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .purpleborder {
+            border: 7px solid #7d2186ea;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .blueborder {
+            border: 7px solid #7388e9;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="imgone">
+         <div class="orangeborder"><div class="orange"><img src="1.svg"></div></div>
+         <p>Education</p>
+        </div>
+        <div class="imgtwo green">
+          <div class="greenborder"><div class="secondimg"> <img src="2.svg"></div></div>
+            <p>Credentialling</p>
+        </div>
+        <div class="imgthree purple">
+           <div class="purpleborder"><div class="thirdimg"> <img src="3.svg"> </div></div>
+            <p>Wallet</p>
+        </div>
+        <div class="imgfour blue">
+            <div class="blueborder"><div class="fourimg"><img src="4.svg"></div> </div>
+            <p>Human resources</p>
+        </div>
+    </div>
+</body>
+</html>

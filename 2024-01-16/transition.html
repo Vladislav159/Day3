@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            margin:0;
+        }
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+        .button {
+            background-color: black;
+            color:white;
+            display: block;
+            padding:10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            /* 1s = 1000ms */
+            /* puse sekunders 0.5s arba 500ms */
+                           /* savybe,trukme,tipas */
+            transition: background-color 500ms ease-in-out;
+
+        }
+        .button:hover {
+            background-color: red;
+        }
+        
+        .box {
+            width:300px;
+            height:300px;
+            margin:0 auto;
+            /* norint nurodyti animacija kelioms savybems su skirtingais parametrais */
+            transition: background-color 500ms ease-in-out,
+                        width 1s ease-in-out,
+                        height 2s ease-in-out,
+                        color 5s ease;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .box:hover {
+            background-color: blue;
+            width:500px;
+            height:500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="button" >Uzvesk pele ant manes</a>
+        <div class="box orange">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde odit totam maxime minus rem dicta magnam deserunt molestias eius ipsam.</div>
+    </div>
+</body>
+</html>
