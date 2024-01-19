@@ -34,7 +34,6 @@
         <a href="homeworklinks/namudarbai/catpageheader.html">Cat page</a>
       </li>
     </ul>  
-    
     <ul>
       <li>
         <p><b>2024-01-09</b><br>Contact Form</p>
@@ -65,9 +64,8 @@
         <li>
           <p><b>2024-01-11</b><br>Header and gallery</p>
         <a href="homeworklinks/2024-01-11/blogpositions.html"> Gallery</a>
-        </li>
-    </ul>
-    
+        </li>   
+     </ul>
     <ul>
       <li>
         <p><b>2024-01-12</b><br>Personal visit card</p>
