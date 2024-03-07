@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Price</title>
+</head>
+<body>
+  <h1>Bitcoin Price</h1>
+  <div id="bitcoin-price"></div>
+
+  <script>
+    // Функция для выполнения запроса к API и обновления данных на странице
+    function fetchBitcoinPrice() {
+      // Отправляем GET-запрос к API
+      fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+        .then(response => response.json()) // Преобразуем ответ в JSON
+        .then(data => {
+          // Получаем цены в разных валютах из полученных данных
+          const usdPrice = data.bpi.USD.rate;
+          const eurPrice = data.bpi.EUR.rate;
+          const gbpPrice = data.bpi.GBP.rate;
+
+          // Формируем текст для отображения на странице
+          const priceText = `
+            <p>Price in USD: ${usdPrice}</p>
+            <p>Price in EUR: ${eurPrice}</p>
+            <p>Price in GBP: ${gbpPrice}</p>
+          `;
+
+          // Обновляем содержимое элемента на странице
+          document.getElementById('bitcoin-price').innerHTML = priceText;
+        })
+       
+    }
+
+    // Вызываем функцию для получения и отображения цен Bitcoin
+    fetchBitcoinPrice();
+  </script>
+</body>
+</html>

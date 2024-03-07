@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "General Sans";
+    src: url(../General-Sans-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "General Sans" ;
+    src: url(../GeneralSans-Extralight.ttf);
+    font-weight:100;
+
+}
+@font-face {
+    font-family: "General Sans" ;
+    src: url(../GeneralSans-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "General Sans" ;
+    src: url(../GeneralSans-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "General Sans" ;
+    src: url(../GeneralSans-Regular.ttf);
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: "General Sans" ;
+    src: url(../GeneralSans-Semibold.ttf);
+    font-weight:600;
+}
+
+* { box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: General Sans;
+    background-color:white;
+    
+}
+.container-xl {
+    
+    margin:0 auto;
+}
+
+header img {
+    width: 108px;
+    height: 32px;
+}
+header .btn {
+    font-weight:600;
+    font-family: "General Sans";
+    background-color: #0876DD;
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+
+   
+}
+
+.row {
+    padding-top: 50px;
+}
+h1 {
+    font-family: "General Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+main p {
+    padding-bottom: 40px;
+}
+
+.row p {
+    font-family: "General Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    
+}
+.row button {
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #0876DD;
+    font-family: "General Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+   
+.feature {
+    padding: 96px 0px;
+}
+.feature h1 {
+    font-family: "General Sans";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+
+}
+.feature p {
+    font-family: "General Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+main {
+    background: url(../images/Ellipse.svg) no-repeat  116% -130px;;
+}
+.befooter {
+
+    background: url(../images/Ellipse.png) no-repeat 15% 13px;
+    background-size: 51%;
+    padding-bottom: 160px;
+}
+
+
+
+.rowthird h4 {  
+    font-family: "General Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    color: #111827;
+    text-align: center;
+
+}
+.rowthird p {
+    font-family: "General Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color:#374151;
+    text-align: center;
+}
+
+.rowthird img {
+    width: 88px;
+}
+
+.featuring {
+    padding-top: 40px;
+    
+    gap: 32px;
+}
+.imagesss {
+    display: flex;
+    padding: 24px 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.paragraph {
+    gap: 24px;
+}
+.paragraph h1 {
+    font-family: "General Sans";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    color:#111827
+}
+.paragraph p {
+    font-family: "General Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #374151;
+}
+
+
+.footer h1 {
+    font-family: "General Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;   
+    color: #FFF;
+    text-align:center;
+    padding-bottom: 16px;
+
+}
+.footer p {
+    font-family: "General Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFF;
+    padding-bottom: 40px;
+    text-align:center;
+}
+.footer {
+    background-color: #111827;
+}
+
+.footer button {
+        display: flex;
+        padding: 12px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        background-color: #0876DD;
+        font-family: "General Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+}
+.btn-outline-secondary {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+     background-color: #FFF;
+    font-size: 16px;
+    min-width: 220px;
+}
+.textcenter h1 {
+    padding-bottom: 8px;
+}
+.textcenter p {
+    padding-bottom: 48px;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+       background-position: 204% 60%;   
+    }
+    h1 {
+        font-size: 34px;
+    }
+    .befooter {
+        background-position: 50% 10%;
+        background-size: 88%;
+        padding-bottom: 48px;
+        
+    }
+    .befooter h1 {
+        font-size: 48px;
+        text-align:center;
+        padding: 0;
+    }
+    .befooter p {
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+    .footer h1 {
+        font-size: 36px;
+    }
+    .footer p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .phototext h4 {
+        font-size: 24px;
+    }
+    .phototext p {
+        font-size: 16px;
+    }
+    .textcenter h1 {
+        font-size: 48px;
+    }
+    .textcenter p {
+        font-size: 18px;
+    }
+
+    .btn-outline-secondary { 
+        font-size: 14px;
+    }
+
+    .imagesss {
+        gap: 16px;
+    }
+
+    .rowthird img {
+        width: 56px;
+    }
+    .feature {
+        padding-top: 96px;
+    }
+    
+}
+@media screen and (max-width: 556px) {
+    main {
+        background-position: -45% 96%;
+        background-size: 120%;
+    }
+    main h1 {
+        font-size: 26px;
+        padding-bottom: 16px;
+        margin: 0;
+    }
+    .row p {
+        font-size: 15px;
+    }
+    .befooter {
+        background-size: 100%;
+        background-position: 49% 12%;
+        padding-bottom: 48px ;
+    }
+    .textcenter h1  {
+        font-size: 36px;
+    }
+    .textcenter p {
+        font-size: 16px;
+    }
+    .featuring h4 {
+        font-size: 20px;
+    }
+    .featuring p {
+        font-size: 14px;
+    }
+    .befooter h1 {
+        font-size: 36px;
+        padding: 0;
+    }
+    .befooter p {
+        font-size: 16px;
+        padding-bottom: 24px;
+    }
+    .footer h1 {
+        font-size: 30px;
+       
+    }
+    .footer p {
+        font-size: 18px;
+      
+    }
+    .phototext h4 {
+        font-size: 20px;
+        text-align:left;
+
+    }
+    .phototext p {
+        font-size: 14px;
+        text-align: left;
+    }
+    .imagesss {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .feature {
+        padding-bottom: 48px;
+    }
+   
+    
+}
+

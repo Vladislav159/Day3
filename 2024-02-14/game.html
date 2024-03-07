@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Games of games</title>
+    <script src="game.js" defer></script>
+    <style>
+        body {
+    margin: 50px auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .mainb {
+        display:flex;
+        justify-content:space-between;
+        gap:50px;
+    }
+
+    .box {
+
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 800px;
+        height: 600px;
+        background-color: black;
+        position:relative;
+}
+
+
+/* .pradzia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+} */
+/* 
+button {
+    background: red;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: 600;
+} */
+.game {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+     background-color: white;
+    position: absolute;      
+}
+.timer {
+    position:absolute;
+    top: 10px ;
+    right: 10px;
+    font-size:30px;
+    color:azure;
+
+}
+.resultatas {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="mainb">
+        <div class="result">
+            <h1 >Rezultatai</h1>
+            <p class="resultatas"></p>
+        </div> 
+        <div class="box">
+            <div class="game" ></div>
+            <div class="timer"></div> 
+        </div>
+        
+    </div>
+</body>
+</html>

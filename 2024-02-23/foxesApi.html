@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxes API</title>
+</head>
+<body>
+    <button class="foxes">Bring photo</button>
+    <div class="image"></div>
+    <script>
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", (e) => {
+        fetch("https://randomfox.ca/floof/")
+            .then(respon => respon.json()) //Turinio konvertavimo eilutė
+            .then(respon => {
+                document.querySelector('.image').innerHTML = `<img src="${respon.image}">`;
+            }); //Grąžinamas atsakymas
+
+        console.log(button)
+    });
+</script>
+    
+</body>
+</html>

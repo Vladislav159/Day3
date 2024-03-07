@@ -1,0 +1,17 @@
+
+
+ .rating {
+    position: relative;
+}
+
+.yellow-stars {
+    color: rgb(246, 217, 71);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.stars-container {
+    width: 80px;
+} 

@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.carts {
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 10px;
+    padding: 10px;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.info {
+    width: 350px;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: center; */
+}
+/* .info p {
+
+} */
+h6 {
+    font-weight:bold;
+    color:blue;
+}
