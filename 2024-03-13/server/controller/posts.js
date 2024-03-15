@@ -53,7 +53,7 @@ router.put('/:id',upload.single('photo'), async (req, res) => {
 
      await Post.findByIdAndUpdate(req.params.id, req.body);
 
-    //  const updatedPost = await PostModel.findByIdAndUpdate(req.params.id, req.body, {new: true});
+    
 
     res.send(req.body);
 });

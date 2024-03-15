@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors'
 import user from './controller/user.js';
 import posst from './controller/posts.js';
 import upload from './middleware/multer.js';
@@ -7,10 +8,16 @@ import upload from './middleware/multer.js';
 //Applikacijos inicijavimas
 const app = express();
 
+// Multipart form data duomenu skaitymui
+// app.use(upload.array());
+
 //Perduodamu reiksmiu urlencoded formatu paemimo nustatymas
 app.use(express.urlencoded({
     extended: true
 }));
+
+//Leidimas kreiptis i serveri is kito adresso priskirymas
+app.use(cors())
 
 //Failu pasiekiamumo priskirymas nurodant;
 //Pirmu parametru - url kelia
@@ -19,6 +26,7 @@ app.use('/files/', express.static('./uploads'));
 //Controlerio registravimas
 app.use('/users/', user);
 app.use('/posts/', posst);
+
 
 
 // Midleware priskirymas(tarpininkas)
