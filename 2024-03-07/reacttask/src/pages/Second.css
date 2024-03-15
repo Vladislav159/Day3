@@ -1,15 +1,15 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-.carts {
+
+.cart .carts {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
     padding: 10px;
 }
-img {
+.cart img {
     width: 200px;
     height: 200px;
 }
-.info {
+.cart .info {
     width: 350px;
     /* display: flex;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@ img {
 /* .info p {
 
 } */
-h6 {
+.cart h6 {
     font-weight:bold;
     color:blue;
 }

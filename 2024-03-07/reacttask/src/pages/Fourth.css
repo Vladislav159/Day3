@@ -1,0 +1,53 @@
+
+
+.pasGen p {
+    text-align:center;
+    font-size: 40px;
+    font-weight:bold;
+}
+
+.container {
+    
+    width:500px;
+    /* background-color:blue; */
+    
+
+}
+.pass {
+    
+    background-color: rgb(213, 213, 213);
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-size: 22px;
+  margin: 30px 0;
+}
+.numero {
+    width: 70px;
+}
+.secondBlock {
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inlinebloc {
+    display: flex;
+    gap: 10px;
+
+}
+.numbSymbol {
+    display: flex;
+    gap: 10px;
+}
+.pasLength {
+    display: flex;
+    gap: 10px;
+
+}
+
+.pasLengthdu {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}

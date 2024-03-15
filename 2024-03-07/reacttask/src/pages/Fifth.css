@@ -1,0 +1,103 @@
+
+.container {
+    width: 900px;
+     /* display: flex;
+    justify-content: space-between;
+    align-items:center; */
+} 
+.logotype {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sociall {
+    justify-content: space-evenly;
+}
+.navigation {
+    width: 200px;
+}
+a { 
+    color:black;
+    
+}
+.soc {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60px;
+}
+.bi-list {
+    font-size:xx-large;
+}
+.seccontainer {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.posts {
+    width:900px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+label {
+    color:grey;
+    font-weight: bold;
+}
+.btn {
+   background-color: rgba(176, 176, 14, 0.852);
+   border:none;
+   font-weight:bold;
+   font-size: 13px;
+   padding: 10px 20px;
+}
+h3 {
+    font-weight: bold;
+}
+.seerch {
+    padding: 5px 10px;
+}
+img {
+    width: 250px;
+    height: 200px;
+}
+.autor {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+.post {
+    width: 300px;
+    padding: 20px;
+}
+.biotwo p {
+    font-weight:bold;
+    margin: 0 ;
+}
+.info p{
+    margin:0;
+}
+.info {
+    margin-bottom: 20px;
+}
+.contenta {
+    color:grey;
+    font-weight:400;
+}
+.categor {
+    color:black;
+    font-weight:bold;
+    font-size: 20px;
+}
+.titlas {
+    color:black;
+    font-weight:bold;
+}
+
+.cont{
+    margin: 0 auto;
+    width: 900px;
+}
+/* .cont {
+    display: flex;
+    flex-wrap: wrap;
+} */
