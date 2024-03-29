@@ -8,16 +8,22 @@ const router = Router();
 router.get('/',async  (req, res) => {
      
     // Visu irasu grazinimas
-
-    res.send(await User.find());
+    try {
+    res.json(await User.find());
+    } catch {
+        res.status(500).json('Ivyko klaida');
+    }
 });
 
 router.get('/:id' , async (req, res) => {
     //Vieno iraso paemimas 
 
     //Norint paimti parametro reiksme: req.params
-    // console.log(req.params.id);
-    res.send(await User.findById(req.params.id));
+    try {
+    res.json(await User.findById(req.params.id));
+    } catch {
+    res.status(500).json('Ivyko klaida');
+    }
     
 } )
 
@@ -31,6 +37,7 @@ router.post('/', upload.single('image'), async (req, res) => {
         
         res.send ({ message: 'New User', request: req.body})
 });
+
 // irasu atnaujinimas
 router.put('/:id',upload.single('image'), async (req, res) => {
 
@@ -41,19 +48,26 @@ router.put('/:id',upload.single('image'), async (req, res) => {
         }
         req.body.photo = req.file.filename;
     }
-
+   try{
     await User.findByIdAndUpdate(req.params.id, req.body);
+    res.json({ message: 'Edited', request: req.body });
+   } catch {
+    res.status(500).json('Ivyko klaida');
+   }
 
-    res.send({ message: 'Edited', request: req.body })
+    
 });
 
 // IRaso istrinimas
 
 router.delete('/:id',upload.single('image'), async (req, res) => {
 
-
+    try {
     await User.findByIdAndDelete(req.params.id);
     res.send('ID Deleted ' + req.params.id);
+    } catch {
+        res.status(500).json('Ivyko klaida');
+    }
    
 });
 

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-const NewProduct = () => {
+const NewUser = () => {
     // Peradresavimo (redirect) kūrimas
     const navigate = useNavigate();
 
@@ -38,7 +38,7 @@ const NewProduct = () => {
                 <div className="mb-3">
                     <label>Nuotrauka</label>
                     <input 
-                        type="text" 
+                        type="file" 
                         className="form-control" 
                         name="photo"
                     /> 
@@ -67,10 +67,18 @@ const NewProduct = () => {
                         name="password"
                     /> 
                 </div>
+                <div className="mb-3">
+                    <label>Nuotrauka</label>
+                    <input 
+                        type="file" 
+                        className="form-control" 
+                        name="photo"
+                    /> 
+                </div>
                 <button className="btn btn-primary">Pridėti</button>
             </form>
         </>
     );
 }
 
-export default NewProduct;
+export default NewUser;
